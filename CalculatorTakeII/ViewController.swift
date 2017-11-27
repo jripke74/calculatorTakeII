@@ -55,14 +55,14 @@ class ViewController: UIViewController {
     @IBAction func equalButton() {
         operators.append(.equals)
         let centerOperator = operators[0]
-        if let leftHandNum = Int(digits[0].rawValue), let rightHandNum = Int(digits[1].rawValue) {
+        if let leftOperand = Int(digits[0].rawValue), let rightOperand = Int(digits[1].rawValue) {
             switch centerOperator {
             case .plus:
-                print("\(leftHandNum) + \(rightHandNum) = \(leftHandNum + rightHandNum)")
+                print("\(leftOperand) + \(rightOperand) = \(leftOperand + rightOperand)")
             case .minus:
-                print("\(leftHandNum) - \(rightHandNum) = \(leftHandNum - rightHandNum)")
+                print("\(leftOperand) - \(rightOperand) = \(leftOperand - rightOperand)")
             case .equals:
-                print("\(leftHandNum) + \(rightHandNum) = \(leftHandNum + rightHandNum)")
+                print("\(leftOperand) + \(rightOperand) = \(leftOperand + rightOperand)")
             }
         }
     }

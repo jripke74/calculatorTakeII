@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     enum Operators: String {
         case plus = "+"
         case minus = "-"
-        case equal  = "="
+        case equals  = "="
     }
     
     var numberPressed = ""
@@ -53,9 +53,18 @@ class ViewController: UIViewController {
     }
     
     @IBAction func equalButton() {
-        operators.append(.equal)
-        print(operators)
-        print(digits)
+        operators.append(.equals)
+        let centerOperator = operators[0]
+        if let leftHandNum = Int(digits[0].rawValue), let rightHandNum = Int(digits[1].rawValue) {
+            switch centerOperator {
+            case .plus:
+                print("\(leftHandNum) + \(rightHandNum) = \(leftHandNum + rightHandNum)")
+            case .minus:
+                print("\(leftHandNum) - \(rightHandNum) = \(leftHandNum - rightHandNum)")
+            case .equals:
+                print("\(leftHandNum) + \(rightHandNum) = \(leftHandNum + rightHandNum)")
+            }
+        }
     }
     
 }

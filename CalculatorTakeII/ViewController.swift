@@ -25,18 +25,44 @@ class ViewController: UIViewController {
     var digits: [Digits] = []
     var operators: [Operators] = []
     
-    @IBOutlet weak var outputDisplayLabel: UILabel!
+    
+    @IBOutlet weak var formulaLabel: UILabel!
+    @IBOutlet weak var outputLabel: UILabel!
+    
+    @IBAction func zeroButton(_ sender: UIButton) {
+    }
     
     @IBAction func oneButton(_ sender: UIButton) {
-        digits.append(.one)
     }
-    
+
     @IBAction func twoButton(_ sender: UIButton) {
-        digits.append(.two)
     }
     
-    @IBAction func plussButton(_ sender: UIButton) {
-        operators.append(.plus)
+    @IBAction func threeButton(_ sender: UIButton) {
+    }
+    
+    @IBAction func fourButton(_ sender: UIButton) {
+    }
+    
+    @IBAction func fiveButton(_ sender: UIButton) {
+    }
+    
+    @IBAction func sixButton(_ sender: UIButton) {
+    }
+    
+    @IBAction func sevenButton(_ sender: UIButton) {
+    }
+    
+    @IBAction func eightButton(_ sender: UIButton) {
+    }
+    
+    @IBAction func nineButton(_ sender: UIButton) {
+    }
+    
+    @IBAction func plusButton(_ sender: UIButton) {
+    }
+    
+    @IBAction func minusButton(_ sender: UIButton) {
     }
     
     @IBAction func equalButton() {

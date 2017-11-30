@@ -22,10 +22,6 @@ class ViewController: UIViewController {
         case equals  = "="
     }
     
-    var numberPressed = ""
-    var displayedNumber = ""
-    var resultsDisplay = ""
-    var digitOperator = ""
     var digits: [Digits] = []
     var operators: [Operators] = []
     
@@ -33,23 +29,14 @@ class ViewController: UIViewController {
     
     @IBAction func oneButton(_ sender: UIButton) {
         digits.append(.one)
-        displayedNumber += "1"
-        outputDisplayLabel.text = displayedNumber
-        print(displayedNumber)
     }
     
     @IBAction func twoButton(_ sender: UIButton) {
         digits.append(.two)
-        displayedNumber += "2"
-        outputDisplayLabel.text = displayedNumber
-        print(displayedNumber)
     }
     
     @IBAction func plussButton(_ sender: UIButton) {
         operators.append(.plus)
-        displayedNumber += "+"
-        outputDisplayLabel.text = displayedNumber
-        print(displayedNumber)
     }
     
     @IBAction func equalButton() {
